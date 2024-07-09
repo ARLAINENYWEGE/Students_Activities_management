@@ -74,3 +74,20 @@ void saveDataToFile() {
     file.close();
     cout << "Data saved to student_data.csv" << endl;
 }
+int main() {
+    int choice;
+
+    do {
+        cout << "System Menu\n1. Add Student\n2. View Students\n3. View Clubs/Societies\n4. View Sports\n5. View Grouped Students\n6. Save all Files\n7. Exit\n";
+        cin >> choice;
+
+        switch (choice) {
+            case 1:
+                addStudent();
+                break;
+            case 2:
+                viewStudents();
+                break;
+            case 3:
+                viewClubsSocieties();
+                break;
