@@ -91,3 +91,23 @@ int main() {
             case 3:
                 viewClubsSocieties();
                 break;
+            case 4:
+                viewSports();
+                break;
+            case 5:
+                viewGroupedStudents();
+                break;
+            case 6:
+                saveDataToFile();
+                break;
+            case 7:
+                cout << "Exiting program...Goodbye!" << endl;
+                break;
+            default:
+                cout << "Invalid choice. Please select a valid option." << endl;
+        }
+
+    } while (choice != 7);
+
+    return 0;
+}
